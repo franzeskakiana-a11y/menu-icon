@@ -1,0 +1,21 @@
+body{
+    margin:0;
+}
+nav a{
+    text-decoration:none; 
+    color:#a8bb12;
+    font-size: 16px;
+    padding:5px 15px;
+    font-family: "Trirong", sans-serif;
+    &:hover{
+        color:#aa337c;
+    }
+}
+header{
+    text-align: center;
+    box-shadow: 0px 0px 5px;
+    background-color:#6463a8;
+}
+nav{
+    padding: 10px;
+}
