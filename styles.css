@@ -1,21 +1,212 @@
+
+html{
+scroll-behavior:smooth;
+}
+
 body{
-    margin:0;
+margin:0;
+background-image:url("https://files.catbox.moe/j70pj9.png");
+background-size:cover;
+background-repeat:no-repeat;
+background-attachment:fixed;
+font-family:'Quicksand', sans-serif;
 }
-nav a{
-    text-decoration:none; 
-    color:#a8bb12;
-    font-size: 16px;
-    padding:5px 15px;
-    font-family: "Trirong", sans-serif;
-    &:hover{
-        color:#aa337c;
-    }
-}
-header{
-    text-align: center;
-    box-shadow: 0px 0px 5px;
-    background-color:#6463a8;
-}
+
+
 nav{
-    padding: 10px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:fixed;
+top:0;
+width:100%;
+padding:10px;
+box-sizing:border-box;
+background-color:rgb(253,132,84);
+z-index:1000;
+}
+
+nav div{
+display:flex;
+gap:6px;
+}
+
+.logo img{
+width:50px;
+height:50px;
+padding-left:20px;
+transition:all 0.2s ease;
+}
+
+.logo img:hover{
+scale:1.2;
+cursor:default;
+}
+
+.subjudul h1{
+font-family: 'Montserrat', sans-serif;
+color:white;
+}
+
+.menu{
+padding-right:100px;
+}
+
+.menu a{
+text-decoration:none;
+color:rgb(185,28,0);
+font-weight:bold;
+padding:10px;
+border-radius:10px;
+transition:0.4s;
+}
+
+.menu a:hover{
+color:rgb(255,115,0);
+background:rgb(139, 40, 0);
+transform:scale(1.2);
+}
+
+section.home{
+background-size:cover;
+background-repeat:no-repeat;
+background-attachment:fixed;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+flex-direction:column;
+}
+
+.home-content h1{
+font-size:60px;
+font-family:'Playfair Display', serif;
+color:#471002;
+margin-bottom:20px;
+}
+
+.home-content p{
+font-size:20px;
+color:#ffffff;
+margin-bottom:30px;
+}
+
+.buy-button{
+padding:12px 30px;
+background-color:white;
+color:#f18841;
+font-weight:bold;
+border:2px solid #fd7b11;
+border-radius:30px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.buy-button:hover{
+background-color:#f57746;
+color:rgb(255, 255, 255);
+}
+
+.outlet{
+padding-top:40px;
+}
+
+.outlet-title-text{
+font-family:'Quicksand', sans-serif;
+font-size:20px;
+color:#000000;
+background-color:rgba(255,255,255,0.87);
+padding:10px 30px;
+border-radius:20px;
+box-shadow:0 0 10px rgba(255, 255, 255, 0.1);
+text-align:center;
+margin:auto;
+width:fit-content;
+}
+
+.container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+padding-top:20px;
+}
+
+
+
+section.about{
+background-color:rgb(255, 200, 149);
+height:610px;
+scroll-margin-top:95px;
+font-family:'Quicksand',sans-serif;
+text-align:center;
+}
+
+.Paris h2{
+padding-top:10px;
+color:white;
+text-shadow:
+0 0 5px #ffffff,
+0 0 10px #ffffff,
+0 0 20px #ffffff,
+0 0 30px #ffffff,
+0 0 40px #ffffff;
+}
+
+.deskripsia{
+color:white;
+margin-top:20px;
+text-shadow:3px 3px 3px #ababab;
+}
+
+.cafeimg{
+display:flex;
+justify-content:center;
+margin-top:20px;
+}
+
+.typing-text{
+overflow:hidden;
+white-space:nowrap;
+border-right:3px solid #fff;
+width:0;
+font-family:'Playfair Display',serif;
+font-size:15px;
+color:rgb(12, 3, 0);
+animation:typing 4s steps(30,end) forwards, blink 0.75s step-end infinite;
+text-align:center;
+line-height:1.6;
+padding:0 10px;
+}
+
+@keyframes typing{
+from{width:0}
+to{width:100%}
+}
+
+@keyframes blink{
+50%{border-color:transparent}
+}
+
+section.contact{
+background-color:rgb(200,253,208);
+height:500px;
+scroll-margin-top:95px;
+}
+
+footer{
+background-color:rgb(189, 74, 8);
+height:50px;
+}
+
+
+h2{
+text-align:center;
+}
+
+h3.c{
+text-align:center;
+margin:8px;
+text-shadow:black;
 }
